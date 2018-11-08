@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AdminModule { }
 
-export interface AdminModule{
+export interface Admin{
   id:number;
   name:String;
   password:String;
