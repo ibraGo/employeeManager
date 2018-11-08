@@ -1,3 +1,23 @@
-<p>
-  show works!
-</p>
+<div>
+
+  <mat-card>
+      <mat-card-title> {{id}} </mat-card-title>
+      <mat-divider></mat-divider>
+    <br>
+    
+    <mat-card-content>
+      <section class="mat-typography">
+        <p>name : {{employee.name}}</p>
+        <p>last name : {{employee.last_name}}</p>
+        <p>id : {{employee.id}}</p>
+        <mat-divider></mat-divider>
+      </section>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <br/>
+      <button mat-raised-button color="primary" routerLink="/list">back to home</button>
+      <br/>
+    </mat-card-footer>
+  </mat-card>
+</div>

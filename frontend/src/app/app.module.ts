@@ -36,11 +36,6 @@ import { MatToolbarModule,
     BrowserAnimationsModule,
     BrowserModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
-=======
-    RouterModule.forRoot(routes),
-    HttpClientModule,
->>>>>>> b6f1cb321ca5f5d94a2ccc2fb4c3694e0af8fbed
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
