@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 export class EmployeeModule { }
 
 export interface Employee {
-  id: String;
+  id: number;
   name : String;
   last_name: String;
   job : String;

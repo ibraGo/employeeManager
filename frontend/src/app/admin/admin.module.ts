@@ -10,7 +10,8 @@ import { CommonModule } from '@angular/common';
 export class AdminModule { }
 
 export interface AdminModule{
-  name:string;
-  password:string;
-  email:string;
+  id:number;
+  name:String;
+  password:String;
+  email:String;
 }
