@@ -14,6 +14,6 @@ export interface Employee {
   name : String;
   last_name: String;
   job : String;
-  salary: String;
-  phone: number;
+  salary: number;
+  phone: String;
 }

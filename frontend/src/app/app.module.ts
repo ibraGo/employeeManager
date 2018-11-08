@@ -8,6 +8,19 @@ import { ListComponent } from './components/list/list.component';
 import { ShowComponent } from './components/show/show.component';
 import { FormComponent } from './components/form/form.component';
 import { LoginComponent } from './components/login/login.component';
+import { MatToolbarModule, 
+  MatFormFieldModule, 
+  MatInputModule, 
+  MatOptionModule, 
+  MatSelectModule, 
+  MatIconModule, 
+  MatButtonModule, 
+  MatCardModule, 
+  MatTableModule, 
+  MatDividerModule, 
+  MatSnackBarModule } from '@angular/material';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +33,20 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatTableModule,
+    MatDividerModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
