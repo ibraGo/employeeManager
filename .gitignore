@@ -5,8 +5,9 @@ frontend/dist
 frontend/tmp
 frontend/out-tsc
 backend/dist
-backend/tmp
 backend/out-tsc
+backend/tmp
+
 
 # dependencies
 frontend/node_modules
