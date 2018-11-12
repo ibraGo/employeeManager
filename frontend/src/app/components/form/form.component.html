@@ -6,7 +6,7 @@
     </section>
     <mat-divider></mat-divider>
     <br>
-    <form class="create-form">
+    <div class="create-form">
 
       <mat-form-field class="create-full-width">
         <input #name matInput placeholder="Name" formControlName="name">
@@ -34,7 +34,8 @@
         <button mat-raised-button color="primary" (click)="add(name.value, last_name.value, job.value, salary.value, phone.value)">save</button>
         <button mat-raised-button color="default" type="reset">seset</button>
       </div>
-
-    </form>
+    </div>
+    <h1>{{employee.name}}</h1>
   </mat-card>
+
 </div>

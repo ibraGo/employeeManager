@@ -7,15 +7,18 @@ import { Employee } from '../..//employee/employee.module'
 })
 export class FormComponent implements OnInit {
 
-  employee:Employee;
+  employee:any=[];
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  add(name, last_name, ){
+  add(name, last_name, job, salary, phone){
     this.employee.name = name;
     this.employee.last_name = last_name;
+    this.employee.job= job;
+    this.employee.salary=salary;
+    this.employee.phone=phone;
   }
 }
