@@ -1,3 +1,40 @@
-<p>
-  form works!
-</p>
+<div>
+  <br>
+  <mat-card>
+    <section>
+      <h3>Create a new employe</h3>
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+    <form class="create-form">
+
+      <mat-form-field class="create-full-width">
+        <input #name matInput placeholder="Name" formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="create-full-width">
+        <input #last_name matInput placeholder="Last Name" formControlName="last_name">
+      </mat-form-field>
+
+      <mat-form-field class="create-full-width">
+        <input #job matInput placeholder="Profession" formControlName="job">
+      </mat-form-field>
+
+      <mat-form-field class="create-full-width">
+        <input #salary matInput placeholder="Salary" type="number" formControlName="salary">
+      </mat-form-field>
+
+      <mat-form-field class="create-full-width">
+        <input #phone matInput placeholder="Phone" type="tel" formControlName="phone">
+      </mat-form-field>
+      <mat-divider></mat-divider>
+      <br><br>
+      <div class="buttons">
+          <button mat-raised-button color="accent" routerLink="/list">back</button>
+        <button mat-raised-button color="primary" (click)="add(name.value, last_name.value, job.value, salary.value, phone.value)">save</button>
+        <button mat-raised-button color="default" type="reset">seset</button>
+      </div>
+
+    </form>
+  </mat-card>
+</div>
