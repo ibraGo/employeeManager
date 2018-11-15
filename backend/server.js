@@ -68,8 +68,8 @@ router.put('/edit',function(req, res){
     });
 });
 
-router.delete('/delete',function(req, res){
-    Employee.findByIdAndDelete(req.body.employee_id, (err, result) => {
+router.delete('/delete/:employee_id',function(req, res){
+    Employee.findByIdAndDelete(req.employee.id, (err, result) => {
         if(err)
             res.json({error: true, message: 'Failed To Delete'});
         else
