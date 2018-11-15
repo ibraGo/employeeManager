@@ -19,6 +19,7 @@ import { MatToolbarModule,
   MatTableModule, 
   MatDividerModule, 
   MatSnackBarModule } from '@angular/material';
+import { EmployeeService } from './employee.service';
 
 
 
@@ -48,7 +49,7 @@ import { MatToolbarModule,
     MatDividerModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
