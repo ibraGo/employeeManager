@@ -42,7 +42,7 @@ export class EmployeeService {
   }
 
   deleteEmplyee(id) {
-    return this.http.delete(`${this.uri}/delete/${id}`);
+    return this.http.delete(`${this.uri}/delete/${id}`);  
   }
 
 }
